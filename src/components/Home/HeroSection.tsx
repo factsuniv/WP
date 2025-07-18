@@ -44,11 +44,7 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="#papers"
-                onClick={(e) => {
-                  e.preventDefault()
-                  document.querySelector('.max-w-7xl')?.scrollIntoView({ behavior: 'smooth' })
-                }}
+                to="/discover"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl group"
               >
                 <Search className="h-5 w-5 mr-2" />
