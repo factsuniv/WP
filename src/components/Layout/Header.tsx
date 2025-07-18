@@ -41,9 +41,9 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <Link 
-              to="/" 
+              to="/discover"
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive('/') 
+                isActive('/discover')
                   ? 'text-blue-600 bg-blue-50' 
                   : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
               }`}
@@ -125,9 +125,9 @@ export default function Header() {
           <div className="md:hidden border-t border-slate-200 py-4">
             <div className="flex flex-col space-y-2">
               <Link 
-                to="/" 
+                to="/discover"
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive('/') 
+                  isActive('/discover')
                     ? 'text-blue-600 bg-blue-50' 
                     : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
                 }`}

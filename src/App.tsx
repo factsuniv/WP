@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast'
 import { AuthProvider } from './contexts/AuthContext'
 import Layout from './components/Layout/Layout'
 import HomePage from './pages/HomePage'
+import DiscoverPage from './pages/DiscoverPage'
 import PaperDetailPage from './pages/PaperDetailPage'
 import CategoryPage from './pages/CategoryPage'
 import AuthPage from './pages/AuthPage'
@@ -22,6 +23,7 @@ function App() {
           <Layout>
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/discover" element={<DiscoverPage />} />
               <Route path="/paper/:id" element={<PaperDetailPage />} />
               <Route path="/category/:slug" element={<CategoryPage />} />
               <Route path="/auth" element={<AuthPage />} />
